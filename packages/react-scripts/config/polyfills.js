@@ -23,3 +23,19 @@ require('whatwg-fetch');
 // Object.assign() is commonly used with React.
 // It will use the native implementation if it's present and isn't buggy.
 Object.assign = require('object-assign');
+
+// Additional polyfills for QUOINE
+
+// TODO: This should be deprecated
+Object.entries = require('object.entries');
+
+// Intl for formatting number and date
+if (!Intl) {
+  require.ensure([
+    'intl',
+    'intl/locale-data/jsonp/en.js'
+  ], function (require) {
+    require('intl');
+    require('intl/locale-data/jsonp/en.js');
+  });
+}
