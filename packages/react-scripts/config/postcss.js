@@ -2,12 +2,11 @@ function getPostCSSConfig() {
   return [
     require('postcss-import'),
     require('postcss-global-theme')({
-      // TODO: this should be set in css file
-      themes: ['dark', 'dark-2']
+      themes: ['dark', 'dark-2'] // TODO: this should be set in css file
     }),
     require('postcss-simple-vars'),
     require('postcss-calc'),
-    require('postcss-short'),
+    require('postcss-short'), // TODO: deprecate this
     require('autoprefixer')({
       browsers: [
         '>1%',
