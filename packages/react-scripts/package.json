@@ -58,7 +58,7 @@
     "object.entries": "^1.0.3",
     "path-exists": "2.1.0",
     "postcss-calc": "^5.3.1",
-    "postcss-global-theme": "^1.0.1",
+    "postcss-global-theme": "^1.0.2",
     "postcss-import": "^8.1.2",
     "postcss-loader": "0.13.0",
     "postcss-short": "^1.4.0",
