@@ -189,8 +189,7 @@ module.exports = {
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In development, this will be an empty string.
     new InterpolateHtmlPlugin({
-      PUBLIC_URL: publicUrl,
-      REACT_APP_ACCOUNTS_HOST: process.env.REACT_APP_ACCOUNTS_HOST || ''
+      PUBLIC_URL: publicUrl
     }),
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({

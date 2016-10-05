@@ -4,7 +4,7 @@ var params = JSON.stringify({
   // TODO: change REACT_APP_LOCAL_IDENT_NAME to something more generic
   // eg: CLASS_FORMAT
   localIdentName: process.env.REACT_APP_LOCAL_IDENT_NAME === 'full' ?
-    '[path][name]---[local]' : '[hash:base64:8]',
+    '[name]---[local]' : '[hash:base64:8]',
   // disables autoprefixer in css-loader itself:
   // https://github.com/webpack/css-loader/issues/281
   // We already have it thanks to postcss. We only pass this flag in
