@@ -39,7 +39,7 @@ if [ -n "$(git status --porcelain)" ]; then
   exit 1;
 fi
 
-console.log('1');
+echo "1";
 
 # Create a temporary clean folder that contains production only code.
 # Do not overwrite any files in the current folder.
@@ -53,7 +53,7 @@ rsync -av --exclude=$clean_path\
   './' $clean_path  >/dev/null
 cd $clean_path
 
-console.log('2');
+echo "2";
 
 # Now remove all the code relevant to development of Create React App.
 files="$(find -L . -name "*.js" -type f)"
@@ -62,7 +62,7 @@ for file in $files; do
   rm $file.bak
 done
 
-console.log('3');
+echo "3";
 
 # Update deps
 rm -rf node_modules
@@ -70,31 +70,31 @@ rm -rf ~/.npm
 npm cache clear
 npm install
 
-console.log('4');
+echo "4";
 
 cd packages/react-scripts
 # Force dedupe
 npm dedupe
 
-console.log('5');
+echo "5";
 
 # Don't bundle fsevents because it is optional and OS X-only
 # Since it's in optionalDependencies, it will attempt install outside bundle
 rm -rf node_modules/fsevents
 
-console.log('6');
+echo "6";
 
 # This modifies $clean_path/package.json to copy all dependencies to bundledDependencies
 node ./node_modules/.bin/bundle-deps
 
-console.log('7');
+echo "7";
 
 cd $clean_path
 
 # Go!
 ./node_modules/.bin/lerna publish --independent "$@"
 
-console.log('8');
+echo "8";
 
 # cleanup
 cd ..
