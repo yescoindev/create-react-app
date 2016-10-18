@@ -30,7 +30,7 @@ Object.assign = require('object-assign');
 Object.entries = require('object.entries');
 
 // Intl for formatting number and date
-if (!Intl) {
+if (!window.Intl) {
   require.ensure([
     'intl',
     'intl/locale-data/jsonp/en.js'
