@@ -1,6 +1,6 @@
 {
   "name": "quoine-react-scripts",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "QUOINE's Configuration and scripts for Create React App.",
   "repository": "QuoineFinancial/create-react-app",
   "license": "BSD-3-Clause",
@@ -112,7 +112,6 @@
     "gzip-size",
     "html-webpack-plugin",
     "http-proxy-middleware",
-    "intl",
     "jest",
     "json-loader",
     "object-assign",
@@ -134,6 +133,7 @@
     "url-loader",
     "webpack",
     "webpack-dev-server",
+    "webpack-manifest-plugin",
     "whatwg-fetch"
   ]
 }
