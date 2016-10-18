@@ -26,7 +26,7 @@
     "autoprefixer": "6.4.1",
     "babel-core": "6.14.0",
     "babel-eslint": "6.1.2",
-    "babel-jest": "15.0.0",
+    "babel-jest": "16.0.0",
     "babel-loader": "6.2.5",
     "babel-preset-react-app": "^0.2.1",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
@@ -51,8 +51,7 @@
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.22.0",
     "http-proxy-middleware": "0.17.1",
-    "intl": "^1.2.5",
-    "jest": "15.1.1",
+    "jest": "16.0.1",
     "json-loader": "0.5.4",
     "object-assign": "4.1.0",
     "object.entries": "^1.0.3",
@@ -73,6 +72,7 @@
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.1",
+    "webpack-manifest-plugin": "1.0.1",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {

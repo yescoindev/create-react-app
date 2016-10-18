@@ -13,6 +13,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ManifestPlugin = require('webpack-manifest-plugin');
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var url = require('url');
 var paths = require('./paths');
@@ -43,7 +44,7 @@ var homepagePathname = homepagePath ? url.parse(homepagePath).pathname : '/';
 var publicPath = ensureSlash(homepagePathname, true);
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
 // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
-// Omit trailing shlash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
+// Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
 var publicUrl = ensureSlash(homepagePathname, false);
 // Get environment variables to inject into our app.
 var env = getClientEnvironment(publicUrl);
@@ -240,7 +241,13 @@ module.exports = {
       }
     }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
-    new ExtractTextPlugin('static/css/[name].[contenthash:8].css')
+    new ExtractTextPlugin('static/css/[name].[contenthash:8].css'),
+    // Generate a manifest file which contains a mapping of all asset filenames
+    // to their corresponding output file so that tools can pick it up without
+    // having to parse `index.html`.
+    new ManifestPlugin({
+      fileName: 'asset-manifest.json'
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

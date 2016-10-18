@@ -61,9 +61,9 @@ npm install --save-dev --save-exact react-scripts@0.5.1
 * Adds [support for `public` folder](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#using-the-public-folder) with arbitrary assets. ([@gaearon](https://github.com/gaearon) in [#703](https://github.com/facebookincubator/create-react-app/pull/703))
 * You can now [specify defaults](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) for environment variables with `.env` file. ([@ayrton](https://github.com/ayrton) in [#695](https://github.com/facebookincubator/create-react-app/pull/695))  
 * Ejecting now generates proper `.babelrc` and `.eslintrc`. ([@fson](https://github.com/fson) in [#689](https://github.com/facebookincubator/create-react-app/pull/689), [@gaearon](https://github.com/gaearon) in [#705](https://github.com/facebookincubator/create-react-app/pull/705))
-* Some React warnings now [include the component stacktrace](https://twitter.com/dan_abramov/status/779308833399332864). ([@gaearon](https://github.com/gaearon) in [#716](https://github.com/facebookincubator/create-react-app/pull/716)) 
+* Some React warnings now [include the component stacktrace](https://twitter.com/dan_abramov/status/779308833399332864). ([@gaearon](https://github.com/gaearon) in [#716](https://github.com/facebookincubator/create-react-app/pull/716))
 * `npm start` doesn’t fail in a composed Docker container. ([@arekkas](https://github.com/arekkas) in [#711](https://github.com/facebookincubator/create-react-app/issues/711))
-* The projects generated with `eject` are now cleaner. ([@gaearon](https://github.com/gaearon) in [#723](https://github.com/facebookincubator/create-react-app/pull/723)) 
+* The projects generated with `eject` are now cleaner. ([@gaearon](https://github.com/gaearon) in [#723](https://github.com/facebookincubator/create-react-app/pull/723))
 * The project is now managed as a monorepo. ([@ryanyogan](https://github.com/ryanyogan) in [#419](https://github.com/facebookincubator/create-react-app/pull/419), [@fson](https://github.com/fson) in [#678](https://github.com/facebookincubator/create-react-app/pull/678))
 
 ### ESLint Config (`eslint-config-react-app`)
