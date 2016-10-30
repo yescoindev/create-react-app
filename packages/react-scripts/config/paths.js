@@ -45,6 +45,7 @@ module.exports = {
   appSrc: resolveApp('src'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
+  appQuoineModules: resolveApp('node_modules/@quoine'),
   ownNodeModules: resolveApp('node_modules'),
   nodePaths: nodePaths
 };
@@ -64,6 +65,7 @@ module.exports = {
   appSrc: resolveApp('src'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
+  appQuoineModules: resolveApp('node_modules/@quoine'),
   // this is empty with npm3 but node resolution searches higher anyway:
   ownNodeModules: resolveOwn('../node_modules'),
   nodePaths: nodePaths
@@ -81,6 +83,7 @@ if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) 
     appSrc: resolveOwn('../template/src'),
     testsSetup: resolveOwn('../template/src/setupTests.js'),
     appNodeModules: resolveOwn('../node_modules'),
+    appQuoineModules: resolveApp('../node_modules/@quoine'),
     ownNodeModules: resolveOwn('../node_modules'),
     nodePaths: nodePaths
   };
