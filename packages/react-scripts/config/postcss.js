@@ -2,7 +2,7 @@ function getPostCSSConfig() {
   return [
     require('postcss-import'),
     require('postcss-global-theme')({
-      themes: ['dark', 'dark-2', 'finance', 'green'] // TODO: this should be set in css file
+      themes: ['dark', 'dark-2', 'finance', 'green', 'yellow'] // TODO: this should be set in css file
     }),
     require('postcss-simple-vars'),
     require('postcss-calc'),
