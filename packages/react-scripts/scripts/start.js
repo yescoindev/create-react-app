@@ -26,7 +26,7 @@ var detect = require('detect-port');
 var clearConsole = require('react-dev-utils/clearConsole');
 var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
-var getProcessForPort = require('react-dev-utils/getProcessForPort');
+// var getProcessForPort = require('react-dev-utils/getProcessForPort');
 // var openBrowser = require('react-dev-utils/openBrowser');
 var prompt = require('react-dev-utils/prompt');
 var pathExists = require('path-exists');
@@ -301,7 +301,9 @@ detect(DEFAULT_PORT).then(port => {
 
   if (isInteractive) {
     clearConsole();
-    var existingProcess = getProcessForPort(DEFAULT_PORT);
+    // var existingProcess = getProcessForPort(DEFAULT_PORT);
+    // waiting for 0.8.0
+    var existingProcess = 'unknow';
     var question =
       chalk.yellow('Something is already running on port ' + DEFAULT_PORT + '.' +
         ((existingProcess) ? ' Probably:\n  ' + existingProcess : '')) +
