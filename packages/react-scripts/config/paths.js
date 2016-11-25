@@ -43,6 +43,7 @@ module.exports = {
   appIndexJs: resolveApp('src/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
+  yarnLockFile: resolveApp('yarn.lock'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   appQuoineModules: resolveApp('node_modules/@quoine'),
@@ -63,6 +64,7 @@ module.exports = {
   appIndexJs: resolveApp('src/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
+  yarnLockFile: resolveApp('yarn.lock'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   appQuoineModules: resolveApp('node_modules/@quoine'),
@@ -70,7 +72,6 @@ module.exports = {
   ownNodeModules: resolveOwn('../node_modules'),
   nodePaths: nodePaths
 };
-// @remove-on-eject-end
 
 // config before publish: we're in ./packages/react-scripts/config/
 if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) {
@@ -81,6 +82,7 @@ if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) 
     appIndexJs: resolveOwn('../template/src/index.js'),
     appPackageJson: resolveOwn('../package.json'),
     appSrc: resolveOwn('../template/src'),
+    yarnLockFile: resolveOwn('../template/yarn.lock'),
     testsSetup: resolveOwn('../template/src/setupTests.js'),
     appNodeModules: resolveOwn('../node_modules'),
     appQuoineModules: resolveApp('../node_modules/@quoine'),
@@ -88,3 +90,4 @@ if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) 
     nodePaths: nodePaths
   };
 }
+// @remove-on-eject-end
