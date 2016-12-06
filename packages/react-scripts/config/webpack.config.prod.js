@@ -9,7 +9,6 @@
  */
 // @remove-on-eject-end
 
-var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -20,6 +19,11 @@ var paths = require('./paths');
 var getClientEnvironment = require('./env');
 var getPostCSSConfig = require('./postcss');
 var cssParams = require('./css-params');
+
+// @remove-on-eject-begin
+// `path` is not used after eject - see https://github.com/facebookincubator/create-react-app/issues/1174
+var path = require('path');
+// @remove-on-eject-end
 
 function ensureSlash(path, needsSlash) {
   var hasSlash = path.endsWith('/');
