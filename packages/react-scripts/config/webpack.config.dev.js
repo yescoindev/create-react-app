@@ -114,9 +114,6 @@ module.exports = {
         include: [
           paths.appSrc,
           paths.appQuoineModules
-        ],
-        exclude: [
-          /react-scripts/
         ]
       }
     ],
