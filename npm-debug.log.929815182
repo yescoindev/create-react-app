@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/dvkndn/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/dvkndn/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose run-script [ 'prepublish', 'publish', 'postpublish' ]
+5 info lifecycle @~prepublish: @
+6 silly lifecycle @~prepublish: no script for prepublish, continuing
+7 info lifecycle @~publish: @
+8 verbose lifecycle @~publish: unsafe-perm in lifecycle true
+9 verbose lifecycle @~publish: PATH: /Users/dvkndn/.nvm/versions/node/v6.9.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/dvkndn/Code/quoine/create-react-app/node_modules/.bin:/Users/dvkndn/.rvm/gems/ruby-2.1.5/bin:/Users/dvkndn/.rvm/gems/ruby-2.1.5@global/bin:/Users/dvkndn/.rvm/rubies/ruby-2.1.5/bin:/Users/dvkndn/.nvm/versions/node/v6.9.1/bin:/Users/dvkndn/.yarn/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dvkndn/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/dvkndn/.nvm/versions/node/v6.9.1/bin
+10 verbose lifecycle @~publish: CWD: /Users/dvkndn/Code/quoine/create-react-app
+11 silly lifecycle @~publish: Args: [ '-c', 'tasks/release.sh' ]
+12 silly lifecycle @~publish: Returned: code: 1  signal: null
+13 info lifecycle @~publish: Failed to exec publish script
+14 verbose stack Error: @ publish: `tasks/release.sh`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/dvkndn/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/dvkndn/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid @
+16 verbose cwd /Users/dvkndn/Code/quoine/create-react-app
+17 error Darwin 16.3.0
+18 error argv "/Users/dvkndn/.nvm/versions/node/v6.9.1/bin/node" "/Users/dvkndn/.nvm/versions/node/v6.9.1/bin/npm" "run" "publish"
+19 error node v6.9.1
+20 error npm  v3.10.8
+21 error code ELIFECYCLE
+22 error @ publish: `tasks/release.sh`
+22 error Exit status 1
+23 error Failed at the @ publish script 'tasks/release.sh'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the  package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     tasks/release.sh
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

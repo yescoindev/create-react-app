@@ -110,7 +110,7 @@ module.exports = {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'eslint'
+        loader: 'eslint',
       }
     ],
     loaders: [
