@@ -34,6 +34,8 @@ var publicUrl = '';
 // Get environment variables to inject into our app.
 var env = getClientEnvironment(publicUrl);
 
+console.log
+
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
 // The production configuration is different and lives in a separate file.
@@ -109,7 +111,13 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          paths.appQuoineModules
+        ],
+        exclude: [
+          /react-scripts/
+        ]
       }
     ],
     loaders: [
