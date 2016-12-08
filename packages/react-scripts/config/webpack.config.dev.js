@@ -110,10 +110,7 @@ module.exports = {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'eslint',
-        include: [
-          paths.appQuoineModules
-        ]
+        loader: 'eslint'
       }
     ],
     loaders: [
