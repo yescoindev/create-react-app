@@ -1,10 +1,15 @@
+const THEMES_BY_VENDOR = {
+  quoine: ['light', 'dark', 'dark-2', 'finance', 'green'],
+  qryptos: ['yellow'],
+  zabit: ['purple'],
+  traders: ['traders-dark', 'traders-light'],
+};
+
 function getPostCSSConfig() {
   return [
     require('postcss-import'),
     require('postcss-global-theme')({
-      themes: [
-        'dark', 'dark-2', 'finance', 'green', 'yellow', 'purple',
-      ]
+      themes: THEMES_BY_VENDOR[process.env.REACT_APP_VENDOR],
     }),
     require('postcss-simple-vars'),
     require('postcss-calc'),
