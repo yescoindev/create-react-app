@@ -1,5 +1,5 @@
 const THEMES_BY_VENDOR = {
-  quoine: ['light', 'dark', 'dark-2', 'finance', 'green'],
+  quoine: ['dark', 'dark-2', 'finance', 'green'],
   qryptos: ['yellow'],
   zabit: ['purple'],
   traders: ['traders-dark', 'traders-light'],
