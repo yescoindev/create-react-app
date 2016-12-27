@@ -184,7 +184,9 @@ module.exports = {
       // TODO: maybe we don't need this
       {
         test: /\.svg$/,
-        loader: 'svg-sprite'
+        loader: 'svg-sprite?' + JSON.stringify({
+          name: '[name]_[hash]'
+        })
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.

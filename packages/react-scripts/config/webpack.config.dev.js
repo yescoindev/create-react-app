@@ -182,7 +182,9 @@ module.exports = {
       // TODO: maybe we don't need this
       {
         test: /\.svg$/,
-        loader: 'svg-sprite'
+        loader: 'svg-sprite?' + JSON.stringify({
+          name: '[name]_[hash]'
+        })
       }
     ]
   },
