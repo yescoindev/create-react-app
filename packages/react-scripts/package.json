@@ -1,6 +1,6 @@
 {
   "name": "@quoine/react-scripts",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "description": "QUOINE's Configuration and scripts for Create React App.",
   "repository": "QuoineFinancial/create-react-app",
   "license": "BSD-3-Clause",
