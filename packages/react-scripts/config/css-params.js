@@ -1,5 +1,3 @@
-// test 2
-
 var params = JSON.stringify({
   importLoaders: 1,
   modules: true,
@@ -16,7 +14,8 @@ var params = JSON.stringify({
   // including CSS. This is confusing and will be removed in Webpack 2:
   // https://github.com/webpack/webpack/issues/283
   // TODO: maybe we don't need this in development. Not sure if it cause problem
-  autoprefixer: false
+  autoprefixer: false,
+  camelCase: true
 });
 
 module.exports = params;
