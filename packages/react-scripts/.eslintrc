@@ -4,6 +4,9 @@
     "browser": true
   },
   "rules": {
+    "react/prefer-stateless-function": [2, {
+      "ignorePureComponents": true
+    }],
     // temporary disable these rules to allow custom webpack config in
     // "resolve". TODO: use webpack resolver properly
     "import/no-extraneous-dependencies": 0,
