@@ -2,7 +2,7 @@ const THEMES_BY_VENDOR = {
   quoine: ['dark', 'dark-2', 'finance', 'green'],
   qryptos: ['yellow'],
   zabit: ['purple'],
-  traders: ['traders-dark', 'traders-light'],
+  traders: ['traders-dark', 'traders-light', 'green'],
 };
 
 function getPostCSSConfig() {
