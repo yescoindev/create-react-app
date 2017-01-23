@@ -205,7 +205,8 @@ module.exports = {
     // In development, this will be an empty string.
     new InterpolateHtmlPlugin({
       PUBLIC_URL: publicUrl,
-      REACT_APP_ACCOUNTS_HOST: process.env.REACT_APP_ACCOUNTS_HOST || ''
+      REACT_APP_ACCOUNTS_HOST: process.env.REACT_APP_ACCOUNTS_HOST || '',
+      REACT_APP_VENDOR: process.env.REACT_APP_VENDOR || '',
     }),
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
