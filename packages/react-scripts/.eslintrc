@@ -7,6 +7,7 @@
     "react/prefer-stateless-function": [2, {
       "ignorePureComponents": true
     }],
+    "no-constant-condition": [2, { "checkLoops": false }],
     // temporary disable these rules to allow custom webpack config in
     // "resolve". TODO: use webpack resolver properly
     "import/no-extraneous-dependencies": 0,
