@@ -207,6 +207,7 @@ module.exports = {
       PUBLIC_URL: publicUrl,
       REACT_APP_ACCOUNTS_HOST: process.env.REACT_APP_ACCOUNTS_HOST || '',
       REACT_APP_VENDOR: process.env.REACT_APP_VENDOR || '',
+      REACT_APP_VENDOR_NAME: process.env.REACT_APP_VENDOR_NAME || ''
     }),
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
