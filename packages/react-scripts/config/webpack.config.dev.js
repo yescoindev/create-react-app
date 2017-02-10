@@ -112,8 +112,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
         include: [
-          paths.appSrc,
-          paths.appSrcCore
+          paths.appSrc
         ],
       }
     ],
@@ -151,7 +150,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: [
           paths.appSrc,
-          paths.appSrcCore,
           paths.appQuoineModules
         ],
         loader: 'babel',
